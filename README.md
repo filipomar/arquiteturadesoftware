@@ -20,4 +20,4 @@ Entregar pelo GitHub
 
 Implementar
 
-Ranking pela web    
+Ranking pela web
