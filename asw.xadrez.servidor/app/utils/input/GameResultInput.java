@@ -4,6 +4,11 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+//{
+//	loser: "account",
+//	winner: "account",
+//	moves: 5
+//}
 public class GameResultInput {
 	@JsonProperty
 	private String loser;
