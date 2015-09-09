@@ -1,7 +1,21 @@
-@(message: String)
+@(message: String, users: List[controllers.vo.UserVO])
 
 @main("Welcome to Play") {
-
-    @play20.welcome(message, style = "Java")
-
+<table>
+	<caption>Placar</caption>
+	<thead>
+		<tr>
+			<th>Jogador</th>
+			<th>Pontos</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for(user <- users) {
+			<tr>
+				<td>@user.getAccount()</td>
+				<td>@user.getPoints()</td>
+			</tr>
+		}
+	</tbody>
+</table>
 }
