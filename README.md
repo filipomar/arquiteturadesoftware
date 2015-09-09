@@ -4,7 +4,7 @@ Material usado na disciplina de Arquitetura de Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Dupla
-Fausto Biazzi
+Fausto Biazzi - 140017-7
 Filipe Pomar
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
