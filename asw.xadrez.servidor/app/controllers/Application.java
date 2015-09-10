@@ -5,6 +5,7 @@ import java.util.List;
 
 import models.Game;
 import models.User;
+import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Result;
 import utils.JsonUtils;
@@ -24,6 +25,8 @@ public class Application extends Controller {
 	}
 
 	public static Result addGame() {
+		Logger.info("BATEU!");
+
 		final GameResultInput input = JsonUtils.parse(GameResultInput.class);
 
 		if (input == null || !input.isvalid()) {
