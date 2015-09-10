@@ -1,27 +1,15 @@
 package asw.xadrez.versao4;
 
-
-
 public class Jogador {
-	private String nomeJogador;
+	private final String nomeJogador;
 	private int pontuacaoJogador;
 	private int numMovimentosJogador;
-	private int turno;
 	private Cor corJogador;
-	
-	
-	public Jogador (String _nomeJogador)
-	{
-		this.nomeJogador = _nomeJogador;
-	}
-	
-	public int getTurno() {
-		return turno;
+
+	public Jogador(final String nomeJogador) {
+		this.nomeJogador = nomeJogador.replaceAll("[^\\w]+", "");
 	}
 
-	public void setTurno(int turno) {
-		this.turno = turno;
-	}
 	public String getNomeJogador() {
 		return nomeJogador;
 	}
@@ -34,19 +22,19 @@ public class Jogador {
 		return numMovimentosJogador;
 	}
 
-	public void setMovimentos(int movimentos) {
-		this.numMovimentosJogador = movimentos;
+	public void movimenta() {
+		this.numMovimentosJogador++;
 	}
 
-	public void setPontuacao(int pontuacao) {
-		this.pontuacaoJogador = pontuacao;
+	public void atualizaPontuacao(final int pontuacaoPeca) {
+		this.pontuacaoJogador += pontuacaoPeca;
 	}
 
 	public Cor getCorJogador() {
 		return corJogador;
-	}	
-	public void setCorJogador(Cor cor) {
-		this.corJogador= cor;
+	}
+
+	public void setCorJogador(final Cor cor) {
+		this.corJogador = cor;
 	}
 }
-
